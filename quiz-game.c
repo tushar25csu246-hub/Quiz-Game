@@ -99,8 +99,8 @@ int main(){
     }
      printf("Q9.Which keyword is used to define constant values? \n 1.Final \t 2. Constant \n 3. Const \t 4.Define \n ");
     printf("Enter answer :=");
-    scanf("%d",&h);
-    if (h == 3)
+    scanf("%d",&i);
+    if (i == 3)
     {
         printf("Correct!!\n");
         score++;
@@ -110,8 +110,8 @@ int main(){
     }
      printf("Q10.What is the correct format specifier for float? \n 1. %%d \t\t 2. %%f \n 3. %%df \t4.%%lf \n ");
     printf("Enter answer :=");
-    scanf("%d",&i);
-    if (i == 2)
+    scanf("%d",&j);
+    if (j == 2)
     {
         printf("Correct!!\n");
         score++;
@@ -124,5 +124,9 @@ int main(){
     totaltime = difftime(end, start);
     printf("Your final score = %d / 10\n", score);
     printf("Total time taken = %.2f seconds\n", totaltime);
+    if (score == 10) printf("🎉 Excellent! Perfect score!\n");
+    else if (score >= 7) printf("👏 Great job!\n");
+    else if (score >= 4) printf("🙂 Not bad, keep practicing.\n");
+    else printf("😅 Better luck next time!\n");
     return 0;
 }
