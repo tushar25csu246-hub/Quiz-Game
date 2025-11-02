@@ -1,0 +1,30 @@
+Which datatype is used for integers?
+1.Float 2.Int 3.Double 4.Char
+2
+What is the size of int datatype?
+1.4 bytes 2.8 bytes 3.6 bytes 4.32 bytes
+1
+Which C command is used to take input from user?
+1.Scanf 2.Printf 3.Int 4.None Of These
+1
+Which symbol is used to end each statement in C?
+1., 2.; 3.' 4.None Of These
+2
+Which keyword is used to exit a loop?
+1.Continue 2.Exit 3.Break 4.End
+3
+Which keyword skips an iteration?
+1.Continue 2.Pass 3.Break 4.Skip
+1
+The char data type stores?
+1.Words 2.Integers 3.Decimal values 4.Characters
+4
+Which loop executes at least once?
+1.For 2.While 3.Do-While 4.Switch
+3
+Which keyword is used to define constant values?
+1.Final 2.Constant 3.Const 4.Define
+3
+What is the correct format specifier for float?
+1.%d 2.%f 3.%df 4.%lf
+2
