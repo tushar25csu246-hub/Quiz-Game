@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-#define MAX_Q 50
+
 
 int main()
 {
@@ -11,6 +11,7 @@ int main()
     char options[256][256];
     int correct[256];
     int total = 0, score = 0, category;
+    int max_q = 50;
     FILE *file = NULL;
 
     srand(time(NULL));
@@ -44,12 +45,12 @@ int main()
         fgets(options[total], 256, file);
         fscanf(file, "%d\n", &correct[total]);
         total++;
-        if (total >= MAX_Q)
+        if (total >= max_q)
             break;
     }
     fclose(file);
 
-    int order[MAX_Q];
+    int order[max_q];
     for (int i = 0; i < total; i++)
         order[i] = i;
     for (int i = total - 1; i > 0; i--)
@@ -79,16 +80,19 @@ int main()
         else
         {
             printf("Wrong! Correct answer: %d\n", correct[i]);
-        }
+        }   
         printf("\n");
     }
 
     time_t end = time(NULL);
     float totalTime = difftime(end, start);
+    
+    int minutes = (int)totalTime / 60;
+    int seconds = (int)totalTime % 60;
 
     printf("------ QUIZ FINISHED ------\n");
     printf("Your final score = %d / %d\n", score, limit);
-    printf("Time taken = %.2f seconds\n", totalTime);
+    printf("Time taken = %d min %d sec\n", minutes, seconds);
 
     if (score == limit)
         printf("Excellent! Perfect score!\n");
