@@ -3,8 +3,6 @@
 #include <string.h>
 #include <time.h>
 
-
-
 int main()
 {
     char question[256][256];
@@ -80,13 +78,13 @@ int main()
         else
         {
             printf("Wrong! Correct answer: %d\n", correct[i]);
-        }   
+        }
         printf("\n");
     }
 
     time_t end = time(NULL);
     float totalTime = difftime(end, start);
-    
+
     int minutes = (int)totalTime / 60;
     int seconds = (int)totalTime % 60;
 
